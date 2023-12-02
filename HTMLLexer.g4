@@ -187,7 +187,7 @@ var len = end - start;
 var text = this.getText().substring(this.getText().length()-len);
 text = text.substring(0, text.length() - "</style>".length());
 var str = CharStreams.fromString(text);
-var lexer = new JavaScriptLexer(str);
+var lexer = new css3Lexer(str);
 for (int i = 0; ; ++i)
 {
     var ro_token = lexer.nextToken();
@@ -211,7 +211,7 @@ var len = end - start;
 var text = this.getText().substring(this.getText().length()-len);
 text = text.substring(0, text.length() - "</>".length());
 var str = CharStreams.fromString(text);
-var lexer = new JavaScriptLexer(str);
+var lexer = new css3Lexer(str);
 for (int i = 0; ; ++i)
 {
     var ro_token = lexer.nextToken();
